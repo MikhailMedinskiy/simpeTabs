@@ -1,0 +1,117 @@
+/*--------------------------
+ reset
+--------------------------*/
+@import "_reset";
+
+/*--------------------------
+ FONTS
+--------------------------*/
+@import "_fonts";
+
+
+
+/*--------------------------
+ GLOBAl
+--------------------------*/
+
+body{
+	color: #000;
+	min-width: 320px;
+	background: #FF7047;
+	line-height: 1.6;
+	font-size: 16px;
+	font-family: "JFFlat-regular", sans-serif;
+}
+
+.accordion{
+	width: 100%;
+	max-width: 380px;
+	margin: 0 auto;
+	padding-top: 50px;
+	&__item{
+		padding: 0;
+	}
+	&__title{
+		cursor: pointer;
+		padding: 20px 0 20px 100px;
+		position: relative;
+		font-size: 24px;
+		&:before{
+			position: absolute;
+			content: "";
+			display: block;
+			top: 50%;
+ 			transform: translateY(-50%);
+			left: 25px;
+			background-repeat: no-repeat;
+		}
+	}
+	&__content{
+		display: none;
+		padding: 10px;
+		font-size: 18px;
+	}
+	&__content--active{
+		display: block;
+		box-shadow: inset 0px 0px 12px -2px #000;
+	}
+}
+.loaction{
+	color: #ffe9c1;
+	background:#730303;
+	&__title{
+		&:before{
+			background-image: url(../img/target.png);
+			height: 48px;
+			width: 38px;
+		}
+	}
+}
+.music{
+	color: #f4ce74;
+	background:#BF3C3D;
+	&__title{
+		&:before{
+			background-image: url(../img/headset.png);
+			height: 48px;
+			width: 48px;
+		}
+	}
+}
+.notes{
+	color: #620808;
+	background: #FFCF6F;
+	&__title{
+		&:before{
+			background-image: url(../img/lamp.png);
+			height: 58px;
+			width: 40px;
+		}
+	}
+}
+.books{
+	color: #a53f3f;
+	background: #FFEAC0;
+	&__title{
+		&:before{
+			background-image: url(../img/book.png);
+			height: 49px;
+			width: 40px;
+		}
+	}
+}
+.tendances{
+	color: #ffe9c1;
+	background: #F64211;
+	&__title{
+		&:before{
+			background-image: url(../img/ligtning.png);
+			height: 49px;
+			width: 30px;
+		}
+	}
+}
+/*--------------------------
+ CUSTOM CODE GOES HERE
+--------------------------*/
+

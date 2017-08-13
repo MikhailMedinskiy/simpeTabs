@@ -1,0 +1,136 @@
+/*--------------------------
+ reset
+--------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/*--------------------------
+ FONTS
+--------------------------*/
+@font-face {
+  font-family: "JFFlat-regular";
+  src: url("../fonts/JF-Flat-regular/JF-Flat-regular.eot");
+  src: url("../fonts/JF-Flat-regular/JF-Flat-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/JF-Flat-regular/JF-Flat-regular.woff") format("woff"), url("../fonts/JF-Flat-regular/JF-Flat-regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+/*--------------------------
+ GLOBAl
+--------------------------*/
+body {
+  color: #000;
+  min-width: 320px;
+  background: #FF7047;
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: "JFFlat-regular", sans-serif; }
+
+.accordion {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  padding-top: 50px; }
+  .accordion__item {
+    padding: 0; }
+  .accordion__title {
+    cursor: pointer;
+    padding: 20px 0 20px 100px;
+    position: relative;
+    font-size: 24px; }
+    .accordion__title:before {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      left: 25px;
+      background-repeat: no-repeat; }
+  .accordion__content {
+    display: none;
+    padding: 10px;
+    font-size: 18px; }
+  .accordion__content--active {
+    display: block;
+    -webkit-box-shadow: inset 0px 0px 12px -2px #000;
+            box-shadow: inset 0px 0px 12px -2px #000; }
+
+.loaction {
+  color: #ffe9c1;
+  background: #730303; }
+  .loaction__title:before {
+    background-image: url(../img/target.png);
+    height: 48px;
+    width: 38px; }
+
+.music {
+  color: #f4ce74;
+  background: #BF3C3D; }
+  .music__title:before {
+    background-image: url(../img/headset.png);
+    height: 48px;
+    width: 48px; }
+
+.notes {
+  color: #620808;
+  background: #FFCF6F; }
+  .notes__title:before {
+    background-image: url(../img/lamp.png);
+    height: 58px;
+    width: 40px; }
+
+.books {
+  color: #a53f3f;
+  background: #FFEAC0; }
+  .books__title:before {
+    background-image: url(../img/book.png);
+    height: 49px;
+    width: 40px; }
+
+.tendances {
+  color: #ffe9c1;
+  background: #F64211; }
+  .tendances__title:before {
+    background-image: url(../img/ligtning.png);
+    height: 49px;
+    width: 30px; }
+
+/*--------------------------
+ CUSTOM CODE GOES HERE
+--------------------------*/
