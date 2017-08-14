@@ -87,7 +87,6 @@ body {
     padding: 10px;
     font-size: 18px; }
   .accordion__content--active {
-    display: block;
     -webkit-box-shadow: inset 0px 0px 12px -2px #000;
             box-shadow: inset 0px 0px 12px -2px #000; }
 

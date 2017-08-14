@@ -11,7 +11,7 @@
 */
 
 
-    $('.accordion__content').hide().prev().on('click', function(){
+    $('.accordion__title').on('click', function(){
         $(this).parents().find('.accordion__content').slideUp().removeClass('accordion__content--active');
         $(this).next().slideDown().addClass('accordion__content--active');
     });
