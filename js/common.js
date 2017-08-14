@@ -1,11 +1,19 @@
 ;(function ($) {
     // Scripts that will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute.
-    $(document).ready(function () {
+    
+/*    $(document).ready(function () {
     	$('.accordion__title').on( "click", function() {
     		var $this = $(this); 
   			$($this).next('.accordion__content').toggleClass('accordion__content--active');
 		});
 
+    });
+*/
+
+
+    $('.accordion__content').hide().prev().on('click', function(){
+        $(this).parents().find('.accordion__content').slideUp().removeClass('accordion__content--active');
+        $(this).next().slideDown().addClass('accordion__content--active');
     });
 
     // Scripts that will run after the whole page is loaded (images, videos, iframes. etc)
@@ -18,3 +26,4 @@
 
     });
 })(jQuery); // Fully reference jQuery after this point.
+
